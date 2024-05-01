@@ -1,0 +1,134 @@
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  body {
+    background: linear-gradient(to bottom right, #4B0082, #00008B); /* Purple to dark blue gradient */
+    color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(170, 255, 0); /* Semi-transparent rich purple */
+    padding: 5px 12px;
+    border-radius: 10px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px 542px 20px 0px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #ddd;
+  }
+  
+  .status {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .reset-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .reset-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .win-animation {
+    animation: win-pop 0.5s ease;
+  }
+  
+  @keyframes win-pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .win-animation {
+    background-color: #7FFF00; /* Green */
+  }
+  .board-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .player-names {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .player-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .player {
+    margin-bottom: 50px;
+  }
+  .board-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (left) of the container */
+    justify-content: space-between; /* Add space between items */
+    margin-bottom: 20px;
+    width:90%;
+  }
+  
+  .player-names {
+    display: flex;
+    flex-direction: column;
+    margin-right:20px;
+  }
+  
+  .player label {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: antiquewhite;
+  }
+  
+  .player input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color:#7FFF00 ;
+    /* color: antiquewhite; */
+  }
+  .player input::placeholder {
+    color:#000; /* Placeholder text color */
+    }
+  
